@@ -1,0 +1,118 @@
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#header-section{
+    background: url("img/preview24.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* navbar csss */
+
+ul.navbar-nav {
+    padding: 10px;
+}
+
+a.nav-link {
+    color: rgb(202 202 202);
+    margin: 0px 7px;
+    position: relative;
+    transition: .3s;
+}
+a.nav-link:hover{
+    color: #fdcc42;
+}
+a.nav-link:hover::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fdcc42;
+    left: -5%;
+    top: 50%;
+    border-radius: 100%;
+}
+i.fas.fa-bars {
+    color: #fff;
+}
+
+/* search box css */
+.nav-search-box button {
+    background: none;
+    border: 0px;
+    position: absolute;
+    left: 75%;
+    top: 11px;
+}
+.nav-search-box input[type="text"] {
+    width: 0px;
+    height: auto;
+    background: transparent;
+    border: 0px;
+    opacity: 0;
+    transition: .5s;
+}
+.nav-search-box .fa-search {
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    background: transparent;
+    color: rgb(202 202 202);
+}
+.nav-search-box:hover i{
+    color: #fdcc42 !important;
+}
+.nav-search-box:hover input[type="text"] {
+    background: #fff;
+    width: 146px;
+    opacity: 1;
+    outline: none;
+    border-radius: 20px;
+}
+
+/* landing text css */
+
+.landing-text {
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.landing-text h3 {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 47px;
+    color: #fdcc42;
+}
+
+.landing-text p {
+    margin-top: 26px;
+    font-size: 16px;
+    color: rgb(202 202 202);
+}
+
+button.landing-btn {
+    padding: 8px 24px;
+    border: 1px solid rgb(202 202 202);
+    margin-top: 20px;
+}
+
+
+.landing-btn i {
+    font-size: x-small;
+    padding-left: 8px;
+}
+
+
